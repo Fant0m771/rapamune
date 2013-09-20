@@ -68,7 +68,7 @@
       <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/custom/rapamune/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="42" selection-start="3419" selection-end="3419" vertical-scroll-proportion="0.25842696">
+            <state line="120" column="27" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.49438202">
               <folding />
             </state>
           </provider>
@@ -133,8 +133,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1975" />
-    <option name="y" value="41" />
+    <option name="x" value="1995" />
+    <option name="y" value="59" />
     <option name="width" value="1879" />
     <option name="height" value="986" />
   </component>
@@ -473,7 +473,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1975" y="41" width="1879" height="986" extended-state="1" />
+    <frame x="1995" y="59" width="1879" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -667,7 +667,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/custom/rapamune/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="42" selection-start="3419" selection-end="3419" vertical-scroll-proportion="0.25842696">
+        <state line="120" column="27" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.49438202">
           <folding />
         </state>
       </provider>

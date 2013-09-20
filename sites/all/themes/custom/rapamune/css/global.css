@@ -1,5 +1,5 @@
 body {
-  font-family: Calibri;
+  font-family: Arial;
   line-height: 1.2;
   background-color: #E2F4FE;
   background-image: url("../images/bodybg2.jpg");
@@ -118,8 +118,9 @@ a {
   border: none;
 }
 
-#block-menu-menu-top-menu a:link {
+#block-menu-menu-top-menu a {
   text-decoration: none;
+  color: #333333;
 }
 
 #block-menu-menu-footer-menu ul.menu {
@@ -150,7 +151,7 @@ a {
 .region-content {
   position: relative;
   margin-left: 50px;
-  margin-right: 110px;
+
 }
 
 .front .region-content {
