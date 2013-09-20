@@ -1,0 +1,4 @@
+name = Rapamune
+description = Some min changes
+package = Custom
+core = 7.x
