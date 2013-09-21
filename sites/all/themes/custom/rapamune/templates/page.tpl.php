@@ -160,7 +160,6 @@
 
       </div></div><!-- /.section, /#navigation -->
     <?php endif; ?>
-
     <?php print render($page['sidebar_first']); ?>
 
     <?php print render($page['sidebar_second']); ?>

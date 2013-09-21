@@ -19,8 +19,7 @@ a {
 }
 
 .messages {
-  position: absolute;
-  z-index: 2;
+  display: none;
 }
 
 .block-block {
@@ -93,6 +92,10 @@ a {
   height: 37px;
 }
 
+#block-system-main {
+  margin-bottom: 0;
+}
+
 #block-system-main-menu ul li.leaf a.link-two-rows {
   padding-top: 10px;
 }
@@ -103,6 +106,7 @@ a {
 
 #block-menu-menu-top-menu {
   float: right;
+  margin-bottom: 10px;
 }
 
 #block-menu-menu-top-menu ul li.leaf {
@@ -161,7 +165,6 @@ a {
 
 .front .region-content {
   margin-left: 0;
-  margin-top: -45px;
 }
 
 #block-block-2 {
@@ -228,7 +231,7 @@ h1#page-title {
 
 
 .not-front #block-system-main {
-  background: url('../images/article-bord.png') no-repeat;
+  background: url('../images/titlediv.jpg') no-repeat;
   padding-top: 20px;
 }
 
@@ -362,6 +365,7 @@ div.tabs {
 #block-block-10 {
   float: right;
   clear: both;
+  margin-bottom: 10px;
 }
 
 #block-block-11 {
@@ -374,7 +378,7 @@ div.tabs {
 #block-block-12 {
   float: right;
   margin-right: 148px;
-  margin-top: 323px;
+  margin-top: 347px;
   position: relative;
 }
 
