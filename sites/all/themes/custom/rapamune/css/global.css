@@ -80,7 +80,11 @@ a {
   display: block;
 }
 
-#block-system-main-menu ul li.leaf a:link {
+#block-system-main-menu ul li.leaf:hover {
+  background: url("../images/menubgover.jpg") no-repeat;
+}
+
+#block-system-main-menu ul li.leaf a {
   font-family: Arial;
   font-size: 11pt;
   line-height: 18px;
@@ -107,6 +111,10 @@ a {
 #block-menu-menu-top-menu {
   float: right;
   margin-bottom: 10px;
+}
+
+#block-menu-menu-top-menu ul.menu {
+  margin-top: 10px;
 }
 
 #block-menu-menu-top-menu ul li.leaf {
