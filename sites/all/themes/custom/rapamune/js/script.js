@@ -7,6 +7,22 @@ function changeSize(e){
   }
 }
 
+function show_popup_17(){
+  var bodyH = jQuery(document).height();
+  jQuery('#block-block-18').css({
+    'width': '100%',
+    'height': bodyH + 'px',
+    'opacity': '0.8'
+
+  }).fadeIn("slow");
+  jQuery("#block-block-17").fadeIn("slow");
+}
+
+function hide_popup17() {
+  jQuery('#block-block-18').fadeOut("slow");
+  jQuery('#block-block-17').hide();
+}
+
 
 jQuery(document).ready(function() {
 
@@ -74,3 +90,20 @@ jQuery(document).ready(function() {
     jQuery(".isi-inner1").mCustomScrollbar("update");
   });
 }); ;
+
+function next_step(e) {
+  switch(e) {
+    case 1:
+      jQuery('#block-block-14').hide();
+      jQuery('#block-system-main').hide();
+      jQuery('#block-block-19').show();
+      break;
+    case 2 :
+      window.location = "/no-thank-you";
+      break;
+    case 3 :
+      window.location = "/patient-support-program—enrollment-form";
+      break;
+  }
+}
+

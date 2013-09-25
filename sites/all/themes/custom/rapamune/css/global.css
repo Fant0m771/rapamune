@@ -1,3 +1,9 @@
+/*Hide before release*/
+#block-block-8 {
+  display: none;
+}
+/*End hide*/
+
 body {
   font-family: Arial;
   line-height: 1.2;
@@ -18,7 +24,18 @@ a {
   color: #3691c6;
 }
 
-.messages {
+p {
+  margin: 10px 0;
+}
+
+.region-content p {
+  color: #333333;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+
+.front .messages {
   display: none;
 }
 
@@ -128,6 +145,7 @@ a {
 
 #block-menu-menu-top-menu ul li.leaf.last {
   border: none;
+  padding-right: 0;
 }
 
 #block-menu-menu-top-menu a {
@@ -187,7 +205,8 @@ a {
   text-align: center;
 }
 
-#block-block-3 {
+#block-block-3,
+#block-block-16 {
   width: 220px;
   position: absolute;
   top: -40px;
@@ -249,6 +268,7 @@ h1#page-title {
 
 #block-block-7 {
   text-align: right;
+  padding: 10px 0;
 }
 
 div.tabs {
@@ -268,14 +288,21 @@ div.tabs {
 .floating-isi {
   background: #FFFFFF;
   border: 2px solid #A0A0A0;
-  border-radius: 10px 10px 10px 10px;
   bottom: 0;
   height: 33%;
   margin-left: -2px;
   overflow: hidden;
   position: fixed;
-  width: 628px;
+  width: 756px;
   z-index: 1;
+}
+
+.floating-isi p {
+  font-size: 12px;
+}
+
+.not-front .floating-isi {
+  margin-left: -50px;
 }
 
 .demo_functions {
@@ -291,11 +318,14 @@ div.tabs {
   background: linear-gradient(#FFFFFF, #E0E0E0) repeat scroll 0 0 transparent;
   border: 2px solid #A0A0A0;
   border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -khtml-border-radius: 10px 10px 10px 10px;
   height: 96%;
   margin-left: 4px;
   overflow-y: hidden;
   position: relative;
-  width: 616px;
+  width: 744px;
   z-index: 100;
 }
 
@@ -331,7 +361,9 @@ div.tabs {
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background: url("../images/home_isi_bluescroll.png") no-repeat;
   border: medium none;
   height: 15px;
@@ -353,6 +385,7 @@ div.tabs {
   color: #0023ff;
   font-weight: bold;
   margin-top: 25px;
+  font-size: 12pt;
 }
 
 .view-safety-information p {
@@ -381,6 +414,10 @@ div.tabs {
   margin-left: 15px;
   margin-top: 315px;
   position: relative;
+}
+
+#block-block-11 p {
+  line-height: 1em;
 }
 
 #block-block-12 {
@@ -441,12 +478,241 @@ div.tabs {
 }
 
 #block-block-14 {
-  border-bottom: 1px solid;
   border-top: 1px solid;
   padding: 10px 0;
 }
 
+#block-block-14 input {
+  width: 70px;
+}
+
+#block-block-14.block {
+  margin-bottom: 0;
+}
+
 #block-block-15 {
   border-bottom: 1px solid;
-  padding-bottom: 10px;
+  border-top: 1px solid;
+}
+
+.takingUl li {
+  list-style-image: url("../images/reddot.jpg") !important;
+}
+
+#block-block-17 {
+  height: 40%;
+  left: 30%;
+  overflow: auto;
+  padding: 16px;
+  position: fixed;
+  top: 10%;
+  background: #FFF;
+  border: 3px solid #2962B1;
+  z-index: 1000;
+  width: 38%;
+  display: none;
+  font-family: Calibri;
+  line-height: 1.2em;
+  font-size: 16px;
+}
+
+#block-block-18 {
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#block-block-19 {
+  display: none;
+}
+
+.page-node-15 #page-title {
+  display: none;
+}
+
+.webform-client-form fieldset {
+  padding: 0;
+}
+
+.webform-client-form label {
+  font-weight: normal;
+}
+
+.webform-client-form  .form-required {
+  display: none;
+}
+
+#webform-client-form-9 #edit-actions {
+  text-align: right;
+}
+
+#webform-client-form-9 #edit-previous {
+  display: none;
+}
+
+#webform-client-form-9 #edit-actions input {
+  background: url("../images/continue_bn.jpg") no-repeat;
+  text-indent: -9999px;
+  width: 68px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.webform-client-form .form-item {
+  margin: 0;
+}
+
+#webform-component-part-1-of-2 p,
+#webform-component-part-2-of-2 p {
+  color: #3691C6;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #3691C6;
+  padding-bottom: 3px;
+}
+
+#webform-component-bagin-saving p {
+  font-weight: bold;
+}
+
+#webform-component-bagin-saving.form-item {
+  margin-bottom: 0;
+}
+
+#webform-component-request-fildset {
+  margin-top: 0;
+  position: relative;
+}
+
+#webform-component-request-fildset--request-card-markup {
+  clear: both;
+  width: 280px;
+}
+
+#webform-component-request-fildset--request-a-card > label {
+  display: none;
+}
+
+#webform-component-request-fildset--request-a-card label {
+  font-weight: bold;
+}
+
+#edit-submitted-request-fildset-request-a-card .form-item{
+  float: left;
+  min-width: 280px;
+}
+
+#webform-component-request-fildset--request-card-markup p {
+  padding-left: 26px;
+}
+
+#webform-component-request-fildset--activate-markup {
+  left: 305px;
+  position: absolute;
+  top: 10px;
+  width: 175px;
+}
+
+#edit-submitted-purchase-fildset-purchase .form-item,
+#edit-submitted-where-live-fieldset-where-live-select .form-item,
+#edit-submitted-year-fieldset-are-you-18-years-of-age-or-older .form-item {
+  float: left;
+  width: 65px;
+}
+
+.custom-error {
+  clear:both;
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.error-text {
+  text-align: center;
+  margin-left: 150px;
+  margin-bottom: 5px;
+}
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 1px solid #CCC;
+  border-color: #AAAAAA #CCCCCC #CCCCCC #AAAAAA;
+}
+
+#webform-component-page-2-fieldset {
+  text-align: right;
+  width: 488px;
+}
+
+#webform-component-page-2-fieldset input {
+  width: 340px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+#webform-component-page-2-fieldset label {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+#block-block-20 {
+  max-height: 300px;
+  left: 30%;
+  overflow: auto;
+  padding: 16px;
+  position: fixed;
+  top: 15%;
+  background: url('../images/popup_20_bg.jpg') 0 100% repeat-x #FFF;
+  border: 1px solid #cf3f68;
+  z-index: 1000;
+  width: 38%;
+  display: none;
+  font-family: Calibri;
+  line-height: 1.2em;
+  font-size: 16px;
+}
+
+#block-block-20 .content {
+  padding: 20px 30px 10px 10px;
+}
+
+#block-block-20 p {
+  margin-bottom: 10px;
+}
+
+.close_popup {
+  background: url("../images/close_button.png") no-repeat;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.form-item-submitted-send-materials {
+  padding-left: 25px;
+}
+
+.form-item-submitted-send-materials input {
+  margin-left: -20px;
+}
+
+#uniform-edit-submitted-send-materials-1 {
+  margin-left: -25px;
+}
+
+.js .page-node-9 .messages.error {
+  display: none;
+}
+
+.page-node-9 .captcha {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.page-node-9 .form-actions {
+  clear: both;
 }

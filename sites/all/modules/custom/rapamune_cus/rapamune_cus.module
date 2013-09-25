@@ -10,7 +10,28 @@ function rapamune_cus_form_alter(&$form, &$form_state, $form_id) {
       $page_count = $form['details']['page_count']['#value'];
       if ($page_num != $page_count) {
         unset($form['captcha']);
+        $form['#validate'][] = "_rapamune_cus_form_19_validate";
+      }
+      else {
+        array_unshift($form['#validate'], '_rapamune_cus_form_19_validate');
       }
       break;
   }
+}
+
+/**
+ * Custom validate.
+ *
+ * @param $form
+ * @param $form_state
+ *
+ */
+function _rapamune_cus_form_19_validate($form, &$form_state) {
+  $values = $form_state['values']['submitted'];
+  if ($values['purchase_fildset']['purchase'] == '1' ||
+      $values['where_live_fieldset']['where_live_select'] == '1' ||
+      $values['year_fieldset']['are_you_18_years_of_age_or_older'] == '0') {
+    form_set_error('input', t('Not valid person'));
+  }
+
 }

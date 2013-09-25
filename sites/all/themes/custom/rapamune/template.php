@@ -130,8 +130,16 @@ function STARTERKIT_preprocess_maintenance_page(&$variables, $hook) {
  */
 
 function rapamune_preprocess_html(&$variables, $hook) {
-  drupal_add_css(drupal_get_path('theme','rapamune') . '/css/jquery.mCustomScrollbar.css');
-  drupal_add_js(drupal_get_path('theme','rapamune') . '/js/jquery.mCustomScrollbar.concat.min.js');
+  drupal_add_css(path_to_theme() . '/css/jquery.mCustomScrollbar.css');
+  drupal_add_js(path_to_theme() . '/js/jquery.mCustomScrollbar.concat.min.js');
+  drupal_add_css(path_to_theme() . '/pixelmatrix-uniform/default/css/uniform.default.min.css');
+  drupal_add_js(path_to_theme() . '/pixelmatrix-uniform/jquery.uniform.min.js');
+
+  drupal_add_js(path_to_theme() . '/js/form-errors.js', array('type' => 'file','scope' => 'footer'));
+
+  drupal_add_js("jQuery(document).ready(function () {
+    jQuery('option, input, a.button, button').not('.ajax-processed, .form-submit').uniform();
+  });", 'inline');
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
